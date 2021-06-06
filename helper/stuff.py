@@ -74,8 +74,8 @@ async def sencc(e):
         "Choose Mode",
         buttons=[
             [
-                Button.inline("Default Compress", data=f"encc{key}"),
-                Button.inline("Custom Compress", data=f"ccom{key}"),
+                Button.inline("ultra fast Compress", data=f"encc{key}"),
+                Button.inline("normal Compress", data=f"ccom{key}"),
             ],
             [Button.inline("Back", data=f"back{key}")],
         ],
