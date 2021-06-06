@@ -74,8 +74,8 @@ async def sencc(e):
         "Choose Mode",
         buttons=[
             [
-                Button.inline("ultra fast Compress", data=f"encc{key}"),
-                Button.inline("normal Compress", data=f"ccom{key}"),
+                Button.inline("Dual Audio Compress ", data=f"encc{key}"),
+                Button.inline("Singal Audio Compress", data=f"ccom{key}"),
             ],
             [Button.inline("Back", data=f"back{key}")],
         ],
@@ -91,7 +91,7 @@ async def back(e):
                 Button.inline("GENERATE SAMPLE", data=f"gsmpl{key}"),
                 Button.inline("SCREENSHOTS", data=f"sshot{key}"),
             ],
-            [Button.inline("COMPRESS", data=f"sencc{key}")],
+            [Button.inline("SUPER_COMPRESS", data=f"sencc{key}")],
         ],
     )
 
