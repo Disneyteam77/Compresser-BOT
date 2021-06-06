@@ -39,7 +39,7 @@ async def screenshot(e):
             buttons=[
                 [
                     Button.inline("GENERATE SAMPLE", data=f"gsmpl{wah}"),
-                    Button.inline("COMPRESS", data=f"sencc{wah}"),
+                    Button.inline("SUPER_COMPRESS", data=f"sencc{wah}"),
                 ],
                 [Button.inline("SKIP", data=f"skip{wah}")],
             ],
@@ -157,7 +157,7 @@ async def sample(e):
     er = stderr.decode()
     try:
         if er:
-            await e.edit(str(er) + "\n\n**ERROR** Contact @danish_00")
+            await e.edit(str(er) + "\n\n**ERROR** Contact @doreamonfans1")
             COUNT.remove(e.chat_id)
             os.remove(dl)
             os.remove(out)
@@ -178,7 +178,7 @@ async def sample(e):
             buttons=[
                 [
                     Button.inline("SCREENSHOTS", data=f"sshot{wah}"),
-                    Button.inline("COMPRESS", data=f"sencc{wah}"),
+                    Button.inline("SUPER_COMPRESS", data=f"sencc{wah}"),
                 ],
                 [Button.inline("SKIP", data=f"skip{wah}")],
             ],
@@ -288,7 +288,7 @@ async def encod(event):
             os.mkdir(rr)
         bb = kk.replace(f".{aa}", " compressed.mkv")
         out = f"{rr}/{bb}"
-        thum = "thumb.jpg"
+        thum = "https://telegra.ph/file/ba45188f8d6f141ae65ad.jpg"
         dtime = ts(int((es - s).seconds) * 1000)
         hehe = f"{out};{dl};{thum};{dtime}"
         key = code(hehe)
@@ -304,7 +304,7 @@ async def encod(event):
                     Button.inline("SCREENSHOTS", data=f"sshot{key}"),
                 ],
                 [Button.url("MEDIAINFO", url=inf)],
-                [Button.inline("COMPRESS", data=f"sencc{key}")],
+                [Button.inline("SUPER_COMPRESS", data=f"sencc{key}")],
             ],
         )
     except BaseException as er:
@@ -333,7 +333,7 @@ async def customenc(e, key):
     er = stderr.decode()
     try:
         if er:
-            await e.edit(str(er) + "\n\n**ERROR** Contact @danish_00")
+            await e.edit(str(er) + "\n\n**ERROR** Contact @doreamonfans1")
             COUNT.remove(e.chat_id)
             os.remove(dl)
             return os.remove(out)
